@@ -6,10 +6,9 @@ const Search = () => {
   console.log("I run with every render!");
 
   useEffect(() => {
-    const search = async () => {
+    (async () => {
       await axios.get("sdjsdsfv");
-    };
-    search();
+    })();
   }, [term]);
   return (
     <div>
