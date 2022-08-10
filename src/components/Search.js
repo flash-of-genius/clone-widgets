@@ -6,8 +6,8 @@ const Search = () => {
   console.log("I run with every render!");
 
   useEffect(() => {
-    console.log("I only run once!!");
-  }, []);
+    console.log("I RUN After every render and at initial render");
+  });
   return (
     <div>
       <div className="ui form">
