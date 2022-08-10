@@ -6,9 +6,9 @@ const Search = () => {
   console.log("I run with every render!");
 
   useEffect(() => {
-    (async () => {
-      await axios.get("sdjsdsfv");
-    })();
+    axios.get("sddfgf").then((response) => {
+      console.log(response.data);
+    });
   }, [term]);
   return (
     <div>
